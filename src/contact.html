@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="css/css/style.min.css">
+   <title>Document</title>
+</head>
+<body>
+
+  <div class="header__plug"></div>
+  <header class="header">
+    <div class="container">
+       <div class="header__body">
+          <a href="#" class="header__logo">
+             <img src="assets/icons/Logo.png" alt="Logo">
+             <span>Interno</span>
+          </a>
+          
+          <div class="header__modal">
+             <nav class="header__menu">
+                <ul class="header__list">
+                   <li>
+                      <a href="index.html" class="header__link">Home</a>
+                   </li>
+                   <li>
+                      <a href="about.html" class="header__link">About Us</a>
+                   </li>
+                   <li>
+                      <a href="services.html" class="header__link">Services</a>
+                   </li>
+                   <li>
+                      <a href="project.html" class="header__link">Project</a>
+                   </li>
+                   <li>
+                      <a href="blog.html" class="header__link">Blog</a>
+                   </li>
+                   <li>
+                      <a href="contact.html" class="header__link link--active">Contact</a>
+                   </li>
+                   <img class="header__search" src="assets/icons/Search.svg" alt="">
+                </ul>
+             </nav>
+          </div>
+          <div class="header__burger">
+             <span></span>
+          </div>
+       </div>
+    </div>
+ </header>
+
+ <main>
+  <section class="page__main contact-main">
+    <div class="container">
+      <div class="page__main-name">
+        <h1 class="page__main-name-title title">Contact Us</h1>
+        <p class="page__main-name-text text">Home / Contact</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <div class="container">
+      <h3 class="contact-form__title title">We love meeting new people and helping them.</h3>
+      
+      <div class="contact-form__wrap">
+
+        <div class="contact-form__contact">
+
+          <div class="contact-form__contact-item">
+            <div class="contact-form__contact-svg-wrap">
+              <svg class="contact-form__contact-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#email "></use>
+              </svg>
+            </div>
+            <a href="mailto:info@yourdomain.com" class="contact-form__contact-item-name">info@yourdomain.com</a>
+          </div>
+          <div class="contact-form__contact-item">
+            <div class="contact-form__contact-svg-wrap">
+              <svg class="contact-form__contact-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <a href="tel:+13784001234" class="contact-form__contact-item-name">+1 (378) 400-1234</a>
+          </div>
+          <div class="contact-form__contact-item">
+            <div class="contact-form__contact-svg-wrap">
+              <svg class="contact-form__contact-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#globe"></use>
+              </svg>
+            </div>
+            <a href="https://yourdomain.com" class="contact-form__contact-item-name" target="_blank">www.yourdomain.com</a>
+          </div>
+
+          <div class="contact-form__contact-social">
+            <a href="https://ru-ru.facebook.com/" target="_blank">
+              <svg class="contact-form__contact-social-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#facebook "></use>
+              </svg>
+            </a>
+            <a href="https://twitter.com/?lang=ru" target="_blank">
+              <svg class="contact-form__contact-social-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#twit "></use>
+              </svg>
+            </a>
+            <a href="https://ru.linkedin.com/" target="_blank">
+              <svg class="contact-form__contact-social-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#in "></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <svg class="contact-form__contact-social-svg">
+                <use xlink:href="assets/svgSprite/sprite.svg#inst "></use>
+              </svg> 
+            </a>
+          </div>
+
+        </div>
+
+        <form class="contact-form__form" action="#">
+          <div class="contact-form__form-name-email">
+            <input class="contact-form__form-name form-inp" required type="text" name="" id="" placeholder="Name">
+            <input class="contact-form__form-email form-inp" required type="text" placeholder="Email">
+          </div>
+
+          <div class="contact-form__form-subject-phone">
+            <input class="contact-form__form-subject form-inp" required type="text" name="" id="" placeholder="Subject">
+            <input class="contact-form__form-phone form-inp" required type="number" placeholder="Phone">
+          </div>
+          <textarea class="contact-form__form-text form-txt" name="" id="" cols="30" rows="8" placeholder="Hello Iam Intrested in.."></textarea>
+          <button class="contact-form__form-btn" type="submit">Send Now
+            <svg class="home__btn-arrow arrow-right">
+              <use xlink:href="assets/svgSprite/sprite.svg#arrow-right "></use>
+            </svg>
+          </button>
+        </form>
+
+      </div>
+
+      <div class="map">
+        <div class="map__wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3920106326827!2d-73.99380482406566!3d40.68736333912365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4e28d2487f%3A0x6b5b2020e3835d28!2sBirchwood%20Films!5e0!3m2!1sru!2sby!4v1698065385163!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ </main>
+
+
+ <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo-wrap">
+        <div class="footer__logo-info">
+          <img class="footer__logo-logo" src="assets/icons/Logo.png" alt="">
+          <p class="footer__logo-name">Interno</p>
+        </div>
+        <p class="footer__text text">It is a long established fact that a reader will be distracted lookings.</p>
+        <div class="footer__social">
+          <a href="https://ru-ru.facebook.com/" target="_blank">
+            <svg class="footer__social-svg">
+              <use xlink:href="assets/svgSprite/sprite.svg#facebook "></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/?lang=ru" target="_blank">
+            <svg class="footer__social-svg">
+              <use xlink:href="assets/svgSprite/sprite.svg#twit "></use>
+            </svg>
+          </a>
+          <a href="https://ru.linkedin.com/" target="_blank">
+            <svg class="footer__social-svg">
+              <use xlink:href="assets/svgSprite/sprite.svg#in "></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <svg class="footer__social-svg">
+              <use xlink:href="assets/svgSprite/sprite.svg#inst "></use>
+            </svg> 
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__info">
+
+        <div class="footer__info-pages">
+          <p class="footer__info-name">Pages</p>
+          <ul class="footer__list">
+            <li><a href="" class="footer__link text">About Us </a></li>
+            <li><a href="" class="footer__link text">Our Projects</a></li>
+            <li><a href="" class="footer__link text">Our Team</a></li>
+            <li><a href="" class="footer__link text">Contact Us</a></li>
+            <li><a href="" class="footer__link text">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__info-services">
+          <p class="footer__info-name">Services</p>
+          <ul class="footer__list">
+            <li><a href="" class="footer__link text">Kitchan</a></li>
+            <li><a href="" class="footer__link text">Living Area</a></li>
+            <li><a href="" class="footer__link text">Bathroom</a></li>
+            <li><a href="" class="footer__link text">Dinning Hall</a></li>
+            <li><a href="" class="footer__link text">Bedroom</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__info-contact">
+          <p class="footer__info-name">Contact</p>
+          <ul class="footer__list">
+            <li><a href="https://www.google.com/maps/d/edit?mid=1RUJZaJsIMG1dVLgBT_ABipsotRdh0Jk&usp=sharing" class="footer__link text" target="_blank">55 East Birchwood Ave. Brooklyn, New York 11201</a></li>
+            <li><a href="mailto:contact@interno.com" class="footer__link text">contact@interno.com</a></li>
+            <li><a href="tel:+1234567890" class="footer__link text">(123) 456 - 7890</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer__footer">
+    <p class="text">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</p>
+  </div>
+ </footer>
+
+ 
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+</html>

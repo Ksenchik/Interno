@@ -1,0 +1,86 @@
+$background-white: #fff;
+$background-beige: #F4F0EC;;
+$color-text: #292F36;
+$color-btn-dark: #292F36;
+$color-btn-light: #CDA274;
+$color-border: #E7E7E7;
+$color-valid: #4b9200;
+$color-invalid: #d31414;
+
+
+%btn-dark{
+  color: #fff;
+  background-color: $color-btn-dark;
+  font-size: 1.8rem;
+  padding: 2.6rem 4.8rem;
+  border-radius: 18px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover{
+    background-color: $color-btn-light;
+    color: $color-text;
+  }
+  &:hover .arrow-right{
+    fill: $color-text;
+  }
+}
+
+%btn-light{
+  color: $color-text;
+  background-color: $color-btn-light;
+  font-size: 1.8rem;
+  padding: 2.6rem 4.8rem;
+  border-radius: 18px;
+  border: none;
+  line-height: 125%; 
+  letter-spacing: 0.36px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover{
+    background-color: $background-beige;
+  }
+}
+
+%btn-circle{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: $background-beige;
+  transition: all 0.3s;
+  cursor: pointer;
+  @media (max-width: 560px){
+    width: 50px;
+    height: 50px;
+  }
+  &:hover{
+    background-color: darken($background-beige, 7%);
+  }
+  &::after{
+    content: url(../../assets/icons/arrow-right.svg);
+    display: block;
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 560px){
+      width: 21px;
+      height: 20px;
+    }
+  }
+}
+
+%photo-center{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center;
+}

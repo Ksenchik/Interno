@@ -1,0 +1,90 @@
+.project-main{
+  background-image: url(../../assets/img/main-project.jpg);
+}
+
+.projects{
+  padding: 20rem 0 15rem;
+  @media (max-width: 1000px){
+    padding: 10rem 0 10rem;
+  }
+}
+
+.projects__btn-title-wrap{
+  border: 2px solid $color-btn-light;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: min-content;
+  margin: 0 auto 60px;
+  @media (max-width: 1000px){
+    border-radius: 10px;
+  }
+  @media (max-width: 700px){
+    grid-template-columns: 1fr 1fr;
+  }
+  }
+
+.projects__btn-choise{
+  background-color: $background-white;
+  width: 219px;
+  height: 75px;
+  border-radius: 18px;
+  border: none;
+  color: $color-text;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover{
+    background-color: $background-beige;
+  }
+  @media (max-width: 1000px){
+    width: 145px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  @media (max-width: 700px){
+  }
+}
+
+.choise--active{
+  background-color: $color-btn-light;
+  color: $background-white;
+  cursor: default;
+  &:hover{
+    background-color: $color-btn-light;
+    color: $background-white;
+  }
+}
+
+.project__item-wrap{
+  column-count: 2;
+  column-gap: 30px;
+  margin-bottom: 6rem;
+  @media (max-width: 1000px){
+    column-count: 1;
+  }
+}
+
+.projext__item{
+  max-width: 585px;
+  break-inside: avoid;
+  margin-bottom: 30px;
+  @media (max-width: 1000px){
+    margin: 0 auto 30px;
+  }
+}
+
+.project__item-img{
+  @extend %photo-center;
+}
+
+
+
+
+
+
+
+
