@@ -30,7 +30,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.61.0",
-    "webpack": "^5.78.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
     "webpack-stream": "^7.0.0"
   }
 }
